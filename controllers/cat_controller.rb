@@ -8,6 +8,13 @@ class CatsController < Sinatra::Base
       :database => 'cats_rescue'
   )
 
+  require 'sinatra'
+  require 'sinatra/cross_origin'
+
+  configure do
+    enable :cross_origin
+  end
+
   get '/' do
     @model = Cat.all
     @model.to_json
