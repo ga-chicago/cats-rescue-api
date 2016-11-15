@@ -24,4 +24,8 @@ class ApplicationController < Sinatra::Base
   configure do
     enable :cross_origin
   end
+
+  get '/' do
+    {:message => 'Home page not designed yet. Whoops.'}.to_json
+  end
 end
