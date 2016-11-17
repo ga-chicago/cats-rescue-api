@@ -9,10 +9,10 @@ development:
   database: wdicatsparty
   username: ladycheshire
   password: meowth42
-  host: https://db4free.net
+  host: http://www.db4free.net
 production:
   adapter: mysql2
   database: wdicatsparty
   username: ladycheshire
   password: meowth42
-  host: http://db4free.net
+  host: http://www.db4free.net
