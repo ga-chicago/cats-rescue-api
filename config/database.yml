@@ -15,4 +15,4 @@ production:
   database: wdicatsparty
   username: ladycheshire
   password: meowth42
-  host: https://db4free.net
+  host: http://db4free.net
