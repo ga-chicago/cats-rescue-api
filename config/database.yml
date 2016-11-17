@@ -9,10 +9,12 @@ development:
   database: wdicatsparty
   username: ladycheshire
   password: meowth42
-  host: http://www.db4free.net
+  host: https://db4free.net
+  port: 3306
 production:
   adapter: mysql2
   database: wdicatsparty
   username: ladycheshire
   password: meowth42
-  host: http://www.db4free.net
+  host: https://db4free.net
+  port: 3306
