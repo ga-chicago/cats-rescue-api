@@ -5,8 +5,11 @@ class ApplicationController < Sinatra::Base
   register Sinatra::CrossOrigin
 
   ActiveRecord::Base.establish_connection(
-      :adapter => 'mysql2',
-      :database => 'cats_rescue'
+    :adapter  => ENV['adapter']
+    :host     => ENV['host'],
+    :username => ENV['user'],
+    :password => ENV['password'],
+    :database => ENV['database']
   )
 
   require 'sinatra'
