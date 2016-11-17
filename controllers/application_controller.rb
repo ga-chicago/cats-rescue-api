@@ -5,7 +5,7 @@ class ApplicationController < Sinatra::Base
   register Sinatra::CrossOrigin
 
   ActiveRecord::Base.establish_connection(
-    :adapter  => ENV['adapter']
+    :adapter  => ENV['adapter'],
     :host     => ENV['host'],
     :username => ENV['user'],
     :password => ENV['password'],
